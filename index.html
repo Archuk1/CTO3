@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТО</title>
+    <style>
+        body {
+            background-color: #ad52d1; 
+            font-family: Arial, sans-serif; 
+            color: #fbfbf8; 
+            margin: 20px;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #865f4b;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #fdfdfd;
+        }
+
+        h2, h3, p, ul {
+            color: #aca10b;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #ffffff;
+            padding: 15px;
+        }
+
+        .main-content {
+            width: 75%;
+            padding: 15px;
+        }
+
+        .footer {
+            background-color: #0a0a0a;
+            color: #fbfbf8;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 2px solid #fbfbf8;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .main-content {
+                width: 100%;
+            }
+
+            table, th, td {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            iframe {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Графік роботи</a></li>
+                <li><a href="#">Запчастини</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>СТО</h1>
+    <h3>Ласкаво просимо до СТО у Вадіка!</h3>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Меню</h2>
+            <ul>
+                <li><a href="#">Контактна інформація</a></li>
+                <li><a href="#">Наші партнери</a></li>
+                <li><a href="#">Відгуки</a></li>
+                <li><a href="#">Відгуки</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Послуги які ми надаємо</h2>
+            <ul>
+                <li>Мийка</li>
+                <li>Запчастини</li>
+                <li>Сервісне обслуговування</li>
+            </ul>
+
+            <h2>Категорії</h2>
+            <table>
+                <tr>
+                    <th>Мотоцикли</th>
+                    <th>Машини</th>
+                    <th>Бензокоса</th>
+                </tr>
+                <tr>
+                    <td>Запчастини</td>
+                    <td>Запчастини</td>
+                    <td>Запчастини</td>
+                </tr>
+                <tr>
+                    <td>Мийка</td>
+                    <td>Мийка</td>
+                    <td>Чистка</td>
+                </tr>
+                <tr>
+                    <td>Сервісне обслуговування</td>
+                    <td>Сервісне обслуговування</td>
+                    <td>Сервісне обслуговування</td>
+                </tr>
+            </table>
+
+            <h2>Фото наших товарів</h2>
+            <img src="https://svarmarket.com.ua/image/cache/catalog/Benzokosy/benzokosa-sequoia-spb4325-800x800.jpg" alt="SUMMER24">
+            <img src="https://agrotech-trading.com.ua/media/news-stati/original/diski-shini1.jpg" alt="SUMMER24">
+            <img src="https://images.prom.ua/1615725376_w600_h600_1615725376.jpg" alt="SUMMER24">
+
+            <h2>Відео роботи</h2>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/TlMtu87GILk" title="Як почистити і  настроїти карбіратор хонда діо." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 СТО у Вадіка. Всі права захищено.</p>
+    </div>
+
+</body>
+</html>
